@@ -60,8 +60,8 @@ app.post('/addOrder', (req, res) =>{
 
 
 // console.log(process.env.DB_PASS);
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-//   })
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
-app.listen(port)
+app.listen(process.env.PORT || port)
